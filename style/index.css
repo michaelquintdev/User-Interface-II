@@ -47,7 +47,7 @@ blockquote, q {
 *{
     max-width: 100%;
     box-sizing: border-box;
-    border: 2px solid blue;
+    border: 0px solid blue;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
@@ -58,8 +58,13 @@ body{
     line-height: 1.5;
     color: #4f4f4f;
 }
+
+/* ----------------------------------------------- */
+/* -----------------------header-------------------- */
+
 header{
     background-color: #ff9a76;
+    padding:1%
 }
 header h1, header nav{
     margin: 1%;
@@ -67,23 +72,44 @@ header h1, header nav{
 
 h1{
     font-family: 'Roboto', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     margin-bottom: .5%;
 }
 a{
     margin-left: 2%;
+    color: #4f4f4f;
+}
+.other:hover{
+    color: white;
+    transition: .3s;
 }
 #upper-section{
     display: flex;
     justify-content: space-around;
+    background-color: rgb(221, 248, 248);
 }
+
+#home{
+    padding: .5%;
+    border-radius: 12px;
+    background-color: rgb(255, 224, 188);
+}
+#home:hover{
+    transition: .3s;
+    border-radius: 5px;
+    background-color: rgb(253, 201, 142);
+}
+
+/* ---------------------------------------------- */
+/* ---------------------Top Section---------------- */
+
 .top-img{
     width: 50%;
     margin: 1% 1%;
 }
 .text{
     width: 40%;
-    margin: 7% 2% 4% 1%;
+    padding-top: 3%;
     font-size: 1.6rem;
 }
 .text h2{
@@ -95,11 +121,53 @@ a{
 }
 button{
     padding: 1% 4%;
+    background-color: rgb(255, 224, 188);
 }
-.class-containers{
+button:hover{
+    transition: .3s;
+    background-color: rgb(255, 197, 176);
+    border-radius: 10px;
+}
+
+/* ------------------------------------------------------ */
+/* -----------------------Image Box---------------------- */
+
+.img-containers{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
+#wall-of-projects{
+    margin: 3% 0%;
+}
+
 .img{
-    
+    width: 20%;
+    margin: 1%;
+    text-align: center;
 }
+
+/* ------------------------------------------------------ */
+/* ----------------------Footer------------------------ */
+
+footer{
+    padding: 5%;
+    background-color: bisque;
+}
+
+.footer-container{
+    text-align: center;
+}
+.footer-container button{
+    margin: 1%;
+    background-color: rgb(253, 244, 236);
+}
+.footer-container button:hover{
+    background-color: rgb(255, 197, 176);
+}
+.footer-container p{
+    font-size: 2rem;
+}
+
+/* -------------------------------------------------------- */
+/* ----------------------Mobile Friendly? Maybe?----------- */

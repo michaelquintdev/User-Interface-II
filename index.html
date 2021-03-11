@@ -16,10 +16,10 @@
     <header>
         <h1>MAQ Dev</h1>
         <nav>
-            <a href = "#index.html">Home</a>
-            <a href = "#about.html">About</a>
-            <a href = "#projects.html">Projects</a>
-            <a href = "#contact.html">Contact</a>
+            <a id = "home" href = "index.html">Home</a>
+            <a class = "other"href = "about.html">About</a>
+            <a class = "other"href = "projects.html">Projects</a>
+            <a class = "other"href = "contact.html">Contact</a>
         </nav>
     </header>
 </div>
@@ -31,7 +31,7 @@
         </div>
         <div class = "text">
             <h2>Michael Quint</h2>
-            <button onclick = "window.location.href = '#projects.html';">My Projects</button>
+            <button onclick = "window.location.href = 'projects.html';">My Projects</button>
             <p>Hello I'm Michael! I'm a Software Developer who inspires to learn more about his field, and am constantly working to achieve that. So far I'm pretty confident in my abilities in HTML and CSS. Here are some of my projects!</p>
         </div>
     </div>
@@ -77,8 +77,10 @@
 <!-- -----------footer-------------- -->
 
     <footer>
-        <p>Like what you see?</p>
-        <button onclick = "window.location.href = '#contact.html';">Contact Me</button>
+        <div class="footer-container">
+            <p>Like what you see?</p>
+            <button onclick = "window.location.href = '#contact.html';">Contact Me</button>
+        </div>
     </footer>
 </body>
 </html>
