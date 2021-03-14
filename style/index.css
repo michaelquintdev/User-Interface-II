@@ -72,12 +72,13 @@ header h1, header nav{
 
 h1{
     font-family: 'Roboto', sans-serif;
-    font-size: 2.8rem;
+    font-size: 6rem;
     margin-bottom: .5%;
 }
 a{
     margin-left: 2%;
     color: #4f4f4f;
+    font-size: 2rem;
 }
 .other:hover{
     color: white;
@@ -100,8 +101,10 @@ a{
     background-color: rgb(253, 201, 142);
 }
 
+
 /* ---------------------------------------------- */
 /* ---------------------Top Section---------------- */
+
 
 .top-img{
     width: 50%;
@@ -110,18 +113,19 @@ a{
 .text{
     width: 40%;
     padding-top: 3%;
-    font-size: 1.6rem;
+    font-size: 3rem;
 }
 .text h2{
-    font-size: 1.8rem;
+    font-size: 4rem;
     line-height: 3;
 }
 .text p{
     margin-top: 4%;
 }
 button{
-    padding: 1% 4%;
+    padding: 2% 8%;
     background-color: rgb(255, 224, 188);
+    font-size: 2.5rem;
 }
 button:hover{
     transition: .3s;
@@ -131,6 +135,7 @@ button:hover{
 
 /* ------------------------------------------------------ */
 /* -----------------------Image Box---------------------- */
+
 
 .img-containers{
     display: flex;
@@ -145,6 +150,10 @@ button:hover{
     width: 20%;
     margin: 1%;
     text-align: center;
+}
+
+h3{
+    font-size: 2.5rem;
 }
 
 /* ------------------------------------------------------ */
@@ -166,8 +175,74 @@ footer{
     background-color: rgb(255, 197, 176);
 }
 .footer-container p{
-    font-size: 2rem;
+    font-size: 3.5rem;
 }
 
-/* -------------------------------------------------------- */
-/* ----------------------Mobile Friendly? Maybe?----------- */
+/* ----------------------------------------------------
+----------------------Optimizations for mobile ---------*/
+
+@media only screen and (max-width: 1600px) {
+
+    /* ---------------------Top Section---------------- */
+    #upper-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-img{
+        width: 90%;
+        margin: 0% 1%;
+        margin-top: 4%;
+    }
+    .text{
+        width: 90%;
+        margin: 1%;
+        margin-bottom: 8%;
+        padding-top: 3%;
+        font-size: 3rem;
+    }
+    .text h2{
+        font-size: 4rem;
+        line-height: 3;
+    }
+    .text p{
+        margin-top: 4%;
+    }
+    button{
+        padding: 2% 8%;
+        background-color: rgb(255, 224, 188);
+        font-size: 2.5rem;
+    }
+    button:hover{
+        transition: .3s;
+        background-color: rgb(255, 197, 176);
+        border-radius: 10px;
+    }
+}
+    /* -----------------Image Row------------------- */
+    
+    /* -----------------------Image Box---------------------- */
+@media only screen and (max-width: 1000px) {
+    .img-containers{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #wall-of-projects{
+        margin: 3% 0%;
+    }
+
+    .img{
+        width: 45%;
+        margin: 1%;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 2.5rem;
+    }
+    a{
+        font-size: 2.5rem;
+    }
+
+  }
