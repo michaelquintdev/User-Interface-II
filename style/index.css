@@ -19,7 +19,7 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 body {
 	background: white;
 	line-height: 1;
-	color: black;
+	color: #4f4f4f;
 	}
 ol, ul {
 	list-style: none;
@@ -47,7 +47,6 @@ blockquote, q {
 *{
     max-width: 100%;
     box-sizing: border-box;
-    border: 0px solid blue;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
@@ -63,7 +62,7 @@ body{
 /* -----------------------header-------------------- */
 
 header{
-    background-color: #ff9a76;
+    background-color: #cbf3f1;
     padding:1%
 }
 header h1, header nav{
@@ -81,24 +80,26 @@ a{
     font-size: 2rem;
 }
 .other:hover{
-    color: white;
+    color: #4f4f4f;
     transition: .3s;
 }
 #upper-section{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(221, 248, 248);
+    background-color: white;
 }
 
 #home{
     padding: .5%;
     border-radius: 12px;
-    background-color: rgb(255, 224, 188);
+    background-color: rgb(251, 251, 251);
+    color:#4f4f4f;
 }
 #home:hover{
     transition: .3s;
     border-radius: 5px;
-    background-color: rgb(253, 201, 142);
+    background-color: rgb(128, 128, 128);
+    color: white;
 }
 
 
@@ -184,7 +185,19 @@ footer{
 @media only screen and (max-width: 1600px) {
 
     /* ---------------------Top Section---------------- */
+    h1{
+        text-align: center;
+    }
+    #home{
+        padding:1%;
+    }
+    .nav-mobile{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
     #upper-section {
+        text-align: center;
         flex-direction: column;
         align-items: center;
     }
