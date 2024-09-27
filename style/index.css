@@ -1,1 +1,248 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+body {
+	background: white;
+	line-height: 1;
+	color: black;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+
+/* ----------------------------------
+---------General Styles ------------------------------------- */
+
+*{
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 0px solid blue;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    line-height: 1.5;
+    color: #4f4f4f;
+}
+
+/* ----------------------------------------------- */
+/* -----------------------header-------------------- */
+
+header{
+    background-color: #ff9a76;
+    padding:1%
+}
+header h1, header nav{
+    margin: 1%;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 6rem;
+    margin-bottom: .5%;
+}
+a{
+    margin-left: 2%;
+    color: #4f4f4f;
+    font-size: 2rem;
+}
+.other:hover{
+    color: white;
+    transition: .3s;
+}
+#upper-section{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(221, 248, 248);
+}
+
+#home{
+    padding: .5%;
+    border-radius: 12px;
+    background-color: rgb(255, 224, 188);
+}
+#home:hover{
+    transition: .3s;
+    border-radius: 5px;
+    background-color: rgb(253, 201, 142);
+}
+
+
+/* ---------------------------------------------- */
+/* ---------------------Top Section---------------- */
+
+
+.top-img{
+    width: 50%;
+    margin: 1% 1%;
+}
+.text{
+    width: 40%;
+    padding-top: 3%;
+    font-size: 3rem;
+}
+.text h2{
+    font-size: 4rem;
+    line-height: 3;
+}
+.text p{
+    margin-top: 4%;
+}
+button{
+    padding: 2% 8%;
+    background-color: rgb(255, 224, 188);
+    font-size: 2.5rem;
+}
+button:hover{
+    transition: .3s;
+    background-color: rgb(255, 197, 176);
+    border-radius: 10px;
+}
+
+/* ------------------------------------------------------ */
+/* -----------------------Image Box---------------------- */
+
+
+.img-containers{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#wall-of-projects{
+    margin: 3% 0%;
+}
+
+.img{
+    width: 20%;
+    margin: 1%;
+    text-align: center;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+/* ------------------------------------------------------ */
+/* ----------------------Footer------------------------ */
+
+footer{
+    padding: 5%;
+    background-color: bisque;
+}
+
+.footer-container{
+    text-align: center;
+}
+.footer-container button{
+    margin: 1%;
+    background-color: rgb(253, 244, 236);
+}
+.footer-container button:hover{
+    background-color: rgb(255, 197, 176);
+}
+.footer-container p{
+    font-size: 3.5rem;
+}
+
+/* ----------------------------------------------------
+----------------------Optimizations for mobile ---------*/
+
+@media only screen and (max-width: 1600px) {
+
+    /* ---------------------Top Section---------------- */
+    #upper-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-img{
+        width: 90%;
+        margin: 0% 1%;
+        margin-top: 4%;
+    }
+    .text{
+        width: 90%;
+        margin: 1%;
+        margin-bottom: 8%;
+        padding-top: 3%;
+        font-size: 3rem;
+    }
+    .text h2{
+        font-size: 4rem;
+        line-height: 3;
+    }
+    .text p{
+        margin-top: 4%;
+    }
+    button{
+        padding: 2% 8%;
+        background-color: rgb(255, 224, 188);
+        font-size: 2.5rem;
+    }
+    button:hover{
+        transition: .3s;
+        background-color: rgb(255, 197, 176);
+        border-radius: 10px;
+    }
+}
+    /* -----------------Image Row------------------- */
+    
+    /* -----------------------Image Box---------------------- */
+@media only screen and (max-width: 1000px) {
+    .img-containers{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #wall-of-projects{
+        margin: 3% 0%;
+    }
+
+    .img{
+        width: 45%;
+        margin: 1%;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 2.5rem;
+    }
+    a{
+        font-size: 2.5rem;
+    }
+
+  }
